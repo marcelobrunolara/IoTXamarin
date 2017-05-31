@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage 
+  xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SIPDemoApp.Pages;assembly=SIPDemoApp"
+             x:Class="SIPDemoApp.MainPage">
+  
+  <NavigationPage Title="Controle" Icon="iconpower.png" BarBackgroundColor="#C0392B" BarTextColor="#FFFFFF">
+    <x:Arguments>
+      <local:Control Title="Controle"/>
+    </x:Arguments>
+  </NavigationPage>
+  <NavigationPage Title="Temperatura" Icon="icontemp.png" BarBackgroundColor="#C0392B" BarTextColor="#FFFFFF">
+    <x:Arguments>
+      <local:Temperature Title="Temperatura" />
+    </x:Arguments>
+  </NavigationPage>
+  <NavigationPage Title="Umidade" Icon="iconumi.png" BarBackgroundColor="#C0392B" BarTextColor="#FFFFFF">
+    <x:Arguments>
+      <local:Humidity Title="Umidade" />
+    </x:Arguments>
+  </NavigationPage>
+
+
+
+</TabbedPage>
